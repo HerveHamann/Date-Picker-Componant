@@ -1,0 +1,17 @@
+.picker-dropdownMenu {
+  position: relative;
+  width: 170px;
+
+  .hidden {
+    display: none;
+  }
+  .picker-container {
+    width: 241px;
+    height: 195px;
+    background-color: $color-3;
+    border: 1px solid $color-4;
+    position: absolute;
+    z-index: 100;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+  }
+}

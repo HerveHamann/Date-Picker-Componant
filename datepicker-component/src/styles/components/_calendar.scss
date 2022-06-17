@@ -1,0 +1,165 @@
+.calendar-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0 0 7px;
+  .calendar-day {
+    width: 31px;
+    height: 25px;
+    border-top: $color-4 solid 1px;
+    border-left: $color-4 solid 1px;
+    background-color: $color-2;
+    text-align: right;
+    color: $color-6;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    span {
+      position: relative;
+      top: 6px;
+      right: 4px;
+    }
+  }
+  .calendar-day:hover {
+    background-color: $color-13;
+    color: $color-3;
+  }
+  .day-selected {
+    width: 31px;
+    height: 25px;
+    border-top: $color-4 solid 1px;
+    border-left: $color-4 solid 1px;
+    background-color: $color-12;
+    text-align: right;
+    color: $color-2;
+    font-weight: 700;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    span {
+      position: relative;
+      top: 6px;
+      right: 4px;
+    }
+  }
+  .calendar-today {
+    width: 31px;
+    height: 25px;
+    border-top: $color-4 solid 1px;
+    border-left: $color-4 solid 1px;
+    background-color: $color-2;
+    text-align: right;
+    color: $color-12;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    cursor: pointer;
+    span {
+      position: relative;
+      top: 6px;
+      right: 4px;
+    }
+  }
+  .calendar-today:hover {
+    background-color: $color-13;
+    color: $color-3;
+  }
+
+  .calendar-day:nth-child(7),
+  .calendar-day:nth-child(14),
+  .calendar-day:nth-child(21),
+  .calendar-day:nth-child(28),
+  .calendar-day:nth-child(29),
+  .calendar-day:nth-child(30),
+  .calendar-day:nth-child(31) {
+    border-right: $color-4 solid 1px;
+  }
+  .calendar-day:nth-child(31) {
+    border-left: unset;
+    border-top: unset;
+  }
+  .calendar-day:nth-child(29),
+  .calendar-day:nth-child(30) {
+    border-top: unset;
+  }
+  .calendar-day:nth-child(30) {
+    border-left: unset;
+  }
+
+  .calendar-day:nth-child(22),
+  .calendar-day:nth-child(23),
+  .calendar-day:nth-child(24),
+  .calendar-day:nth-child(25),
+  .calendar-day:nth-child(26),
+  .calendar-day:nth-child(27),
+  .calendar-day:nth-child(28),
+  .calendar-day:nth-child(29),
+  .calendar-day:nth-child(30),
+  .calendar-day:nth-child(31) {
+    border-bottom: $color-4 solid 1px;
+  }
+  .calendar-today:nth-child(7),
+  .calendar-today:nth-child(14),
+  .calendar-today:nth-child(21),
+  .calendar-today:nth-child(28),
+  .calendar-today:nth-child(29),
+  .calendar-today:nth-child(30),
+  .calendar-today:nth-child(31) {
+    border-right: $color-4 solid 1px;
+  }
+  .calendar-today:nth-child(31) {
+    border-left: unset;
+    border-top: unset;
+  }
+  .calendar-today:nth-child(29),
+  .calendar-today:nth-child(30) {
+    border-top: unset;
+  }
+  .calendar-today:nth-child(30) {
+    border-left: unset;
+  }
+
+  .calendar-today:nth-child(22),
+  .calendar-today:nth-child(23),
+  .calendar-today:nth-child(24),
+  .calendar-today:nth-child(25),
+  .calendar-today:nth-child(26),
+  .calendar-today:nth-child(27),
+  .calendar-today:nth-child(28),
+  .calendar-today:nth-child(29),
+  .calendar-today:nth-child(30),
+  .calendar-today:nth-child(31) {
+    border-bottom: $color-4 solid 1px;
+  }
+  .day-selected:nth-child(7),
+  .day-selected:nth-child(14),
+  .day-selected:nth-child(21),
+  .day-selected:nth-child(28),
+  .day-selected:nth-child(29),
+  .day-selected:nth-child(30),
+  .day-selected:nth-child(31) {
+    border-right: $color-4 solid 1px;
+  }
+  .day-selected:nth-child(31) {
+    border-left: unset;
+    border-top: unset;
+  }
+  .day-selected:nth-child(29),
+  .day-selected:nth-child(30) {
+    border-top: unset;
+  }
+  .day-selected:nth-child(30) {
+    border-left: unset;
+  }
+
+  .day-selected:nth-child(22),
+  .day-selected:nth-child(23),
+  .day-selected:nth-child(24),
+  .day-selected:nth-child(25),
+  .day-selected:nth-child(26),
+  .day-selected:nth-child(27),
+  .day-selected:nth-child(28),
+  .day-selected:nth-child(29),
+  .day-selected:nth-child(30),
+  .day-selected:nth-child(31) {
+    border-bottom: $color-4 solid 1px;
+  }
+}
