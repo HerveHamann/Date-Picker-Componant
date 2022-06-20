@@ -1,4 +1,4 @@
-# Project n°12: Sportsee
+# Student simple Date picker
 
 ## Project's goal
 
@@ -21,12 +21,11 @@ npm 8.3.1
 
 ## Installation
 
-npm install //A COMPLETER
+npm install datepicker-component-student
 
 ## Usage
 
-import DatePicker from //A COMPLETER
-import //A COMPLETER (css)
+import DatePicker from datepicker-component-student
 
 ## Retrieve date
 
