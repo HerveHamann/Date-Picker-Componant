@@ -1,7 +1,24 @@
 import React, { useState, useRef, useEffect } from "react";
 import Calendar from "./Calendar";
-import { month, year } from "../assets/SelectContent";
 import CalendarHearder from "./CalendarHearder";
+
+const month = [
+  { name: "January" },
+  { name: "February" },
+  { name: "March" },
+  { name: "April" },
+  { name: "May" },
+  { name: "June" },
+  { name: "July" },
+  { name: "August" },
+  { name: "September" },
+  { name: "October" },
+  { name: "November" },
+  { name: "December" },
+];
+
+const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1 }, (_, i) => start + i * step);
+export const year = range(1950, 2050, 1);
 
 const DatePicker = ({
   title,

@@ -30,14 +30,12 @@ import DatePicker from datepicker-component-student
 ## Retrieve date
 
 You can easily retrieve the select date by passing a props.
-i.e: A propos called setSelected is used by default with a UseEffect (both need to be uncommented for use)
+i.e: setSelected is used by default with a UseEffect (both need to be uncommented for use)
 
 ## Select customization
 
 Default mont : Jan-Dec
 Default year :1950-2050
-
-Thoses params can be modified in the SelectContent.js file
 
 ## credits
 
