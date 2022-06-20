@@ -35,8 +35,8 @@ export const year = range(1950, 2050, 1);
 
 const DatePicker = ({
   title,
-  id //  setSelected
-
+  id,
+  setSelected
 }) => {
   const [openDropDown, setOpenDropDown] = useState(false);
   const [selectedDay, setSelectedDay] = useState(new Date(Date.now()).getDate());
@@ -72,10 +72,10 @@ const DatePicker = ({
     if (input !== "") {
       setInput(`${monthNumber}/${selectedDayWithZero}/${selectedYear}`);
     }
-  }, [input, monthNumber, selectedDayWithZero, selectedYear]); // useEffect(() => {
-  //   setSelected(input);
-  // }, [setSelected, input]);
-
+  }, [input, monthNumber, selectedDayWithZero, selectedYear]);
+  useEffect(() => {
+    setSelected(input);
+  }, [setSelected, input]);
   const ref = useRef(null);
 
   const handleCLickOutside = e => {

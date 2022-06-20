@@ -20,11 +20,7 @@ const month = [
 const range = (start, stop, step) => Array.from({ length: (stop - start) / step + 1 }, (_, i) => start + i * step);
 export const year = range(1950, 2050, 1);
 
-const DatePicker = ({
-  title,
-  id,
-  //  setSelected
-}) => {
+const DatePicker = ({ title, id, setSelected }) => {
   const [openDropDown, setOpenDropDown] = useState(false);
 
   const [selectedDay, setSelectedDay] = useState(new Date(Date.now()).getDate());
@@ -63,9 +59,9 @@ const DatePicker = ({
     }
   }, [input, monthNumber, selectedDayWithZero, selectedYear]);
 
-  // useEffect(() => {
-  //   setSelected(input);
-  // }, [setSelected, input]);
+  useEffect(() => {
+    setSelected(input);
+  }, [setSelected, input]);
 
   const ref = useRef(null);
   const handleCLickOutside = (e) => {
