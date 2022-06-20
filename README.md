@@ -25,7 +25,15 @@ npm install datepicker-component-student
 
 ## Usage
 
+where you want to use the component:
+
 import DatePicker from datepicker-component-student
+
+in the index.scss:
+
+@import "../../node_modules/datepicker-component-student-final/src/styles/components/calendar";
+@import "../../node_modules/datepicker-component-student-final/src/styles/components/calendarHeader";
+@import "../../node_modules/datepicker-component-student-final/src/styles/components/datePicker";
 
 ## Retrieve date
 
